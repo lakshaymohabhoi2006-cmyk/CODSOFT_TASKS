@@ -98,7 +98,7 @@ export default function Contact() {
             >
               <MapPin className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
               <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-2">Location</h3>
-              <p className="text-slate-600 dark:text-slate-400">Your City, Country</p>
+              <p className="text-slate-600 dark:text-slate-400">Faridabad, Haryana</p>
             </motion.div>
           </div>
 
