@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ABOUT_TEXT } from '@/lib/constants';
 
@@ -25,7 +26,7 @@ export default function About() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left side - Image placeholder */}
+            {/* Portrait */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -33,8 +34,14 @@ export default function About() {
               viewport={{ once: true }}
               className="flex items-center justify-center"
             >
-              <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-cyan-400 dark:from-blue-600 dark:to-cyan-600 rounded-lg shadow-lg flex items-center justify-center">
-                <span className="text-white text-lg font-semibold">Your Photo Here</span>
+              <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-700">
+                <Image
+                  src="/lakshay-about.jpg"
+                  alt="Lakshay Mohabhoi wearing a formal suit"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 384px"
+                  className="scale-[1.12] object-cover object-[center_32%]"
+                />
               </div>
             </motion.div>
 
