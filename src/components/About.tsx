@@ -40,7 +40,7 @@ export default function About() {
                   alt="Lakshay Mohabhoi wearing a formal suit"
                   fill
                   sizes="(max-width: 768px) 100vw, 384px"
-                  className="scale-[1.12] object-cover object-[center_32%]"
+                  className="object-cover object-[center_32%]"
                 />
               </div>
             </motion.div>
