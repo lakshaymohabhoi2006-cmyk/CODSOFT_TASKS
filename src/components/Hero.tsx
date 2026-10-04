@@ -17,15 +17,15 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl bg-slate-100 shadow-2xl ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-700 sm:max-w-sm"
+          className="relative mx-auto h-56 w-56 overflow-hidden rounded-full border-4 border-white bg-slate-100 shadow-2xl ring-4 ring-blue-500/20 dark:border-slate-800 sm:h-72 sm:w-72 lg:h-80 lg:w-80"
         >
           <Image
             src="/lakshay-about.jpg"
             alt="Lakshay Mohabhoi in a formal suit"
             fill
-            sizes="(max-width: 640px) 320px, (max-width: 1024px) 384px, 360px"
+            sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
             priority
-            className="scale-[1.2] object-cover object-[center_32%]"
+            className="scale-[1.35] object-cover object-[center_32%]"
           />
         </motion.div>
 
