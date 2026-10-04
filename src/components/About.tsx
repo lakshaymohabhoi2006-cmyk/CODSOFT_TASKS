@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ABOUT_TEXT } from '@/lib/constants';
 
@@ -25,30 +24,10 @@ export default function About() {
             <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 rounded-full mx-auto" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Portrait */}
+          <div className="mx-auto max-w-3xl">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="flex items-center justify-center"
-            >
-              <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-700">
-                <Image
-                  src="/lakshay-about.jpg"
-                  alt="Lakshay Mohabhoi wearing a formal suit"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 384px"
-                  className="object-cover object-[center_32%]"
-                />
-              </div>
-            </motion.div>
-
-            {/* Right side - Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               className="space-y-6"
